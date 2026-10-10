@@ -74,7 +74,7 @@ export const OfferModal: React.FC<OfferModalProps> = ({ isOpen, onClose }) => {
     };
 
     const dataJSONString = JSON.stringify(payload, null, 4);
-    const pesanWa = `Halo Admin PlayStore, saya ingin mengajukan publikasi data APK ke NewAppStore.\n\nBerikut hasil data aplikasi saya:\n\n\`\`\`javascript\n${dataJSONString}\n\`\`\``;
+    const pesanWa = `https://store.starpit.my.id\nHalo Admin NewAppStore, saya ingin mengajukan publikasi data APK ke NewAppStore.\n\nBerikut hasil data aplikasi saya:\n\n\`\`\`javascript\n${dataJSONString}\n\`\`\``;
     const nomorAdmin = '6285727658632';
     const linkWa = `https://wa.me/${nomorAdmin}?text=${encodeURIComponent(pesanWa)}`;
 
@@ -103,7 +103,7 @@ export const OfferModal: React.FC<OfferModalProps> = ({ isOpen, onClose }) => {
 
             <h3 className="text-2xl font-extrabold text-white mb-2">Penawaran Spesial ✨</h3>
             <p className="text-sm text-gray-300 leading-relaxed mb-6">
-              Ingin mempublikasikan APK buatan sendiri ke PlayStore? Dapatkan kesempatan{' '}
+              Ingin mempublikasikan APK buatan sendiri tapi gapunya duit? Dapatkan kesempatan{' '}
               <span className="text-amber-400 font-bold">Gratis pertama kali upload</span> di NewAppStore!
               Pamerkan hasil karya aplikasi dan game Anda agar bisa diunduh oleh semua pengguna.
             </p>
