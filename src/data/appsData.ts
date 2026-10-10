@@ -172,7 +172,7 @@ export const initialAppsDatabase: AppItem[] = [
     developer: "PitNewbie",
     kategori: "aplikasi",
     subKategori: "Alat & Penjelajah Web",
-    icon: "https://freeimage.host/i/nMXfre2?w=200&auto=format&fit=crop&q=80",
+    icon: "https://6abf4d6f48813dd42f7635cf.imgix.net/sandbox/neXai.png?w=200&auto=format&fit=crop&q=80",
     bannerImage: heroAiAssistant,
     deskripsi: "Browser ultra-ringan dengan mesin pencari cerdas 'neXai search'. Temukan 1000+ website AI, alat produktivitas, berita terkurasi, dan direktori link tanpa pelacak iklan.\n\n✨ Keunggulan:\n- AdBlock terintegrasi bawaan\n- Ringkas hanya 2,4 MB menghemat kuota dan memori\n- Fitur ringkasan halaman pintar otomatis\n- Mode malam OLED hemat baterai.",
     ukuran: "2,4 MB",
