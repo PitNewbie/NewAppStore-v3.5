@@ -5,7 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: "/NewAppStore-v3.5/",
+    base: "/s.starpit.my.id/",
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
