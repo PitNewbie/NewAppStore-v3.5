@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { AppItem, AppReview } from '../data/appsData';
+import { AppIcon } from './AppIcon';
 import {
   X,
   Star,
@@ -131,22 +132,9 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
         <div className="p-6 sm:p-8 space-y-7">
           
           {/* Main App Identity Lockup */}
-          <div className="flex flex-col sm:flex-row gap-5 sm:items-center">
+          <div className="flex flex-col sm:flex-row gap-4 sm:items-center">
             {/* App Icon */}
-            <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-3xl overflow-hidden bg-[#181a1f] border border-[#3a3f4b] shadow-xl shrink-0 flex items-center justify-center relative">
-              <img
-                src={app.icon}
-                alt={app.nama}
-                referrerPolicy="no-referrer"
-                className="w-full h-full object-cover"
-                onError={(e) => {
-                  (e.target as HTMLElement).style.display = 'none';
-                }}
-              />
-              <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-tr from-emerald-900 to-[#01875f] -z-10">
-                <span className="text-3xl font-extrabold text-white">{app.nama.charAt(0)}</span>
-              </div>
-            </div>
+            <AppIcon appId={app.id} appName={app.nama} size="xl" />
 
             {/* Info and Titles */}
             <div className="flex-1 min-w-0">
@@ -457,7 +445,7 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
                         key={star}
                         onClick={() => setNewRating(star)}
                         className="p-1 text-amber-400 hover:scale-125 transition-transform"
-                      >
+                    >
                         <Star className={`w-5 h-5 ${star <= newRating ? 'fill-amber-400' : 'text-gray-600'}`} />
                       </button>
                     ))}
