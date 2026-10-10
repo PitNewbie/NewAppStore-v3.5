@@ -89,7 +89,7 @@ export const initialAppsDatabase: AppItem[] = [
     developer: "Mojang Studio",
     kategori: "game",
     subKategori: "Petualangan & Sandbox",
-    icon: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=200&auto=format&fit=crop&q=80",
+    icon: "https://cloud.epand.my.id/i/e7gkwrzKUG.png?w=200&auto=format&fit=crop&q=80",
     bannerImage: heroCyberRpg,
     deskripsi: "Jelajahi dunia tanpa batas dan bangun apa pun mulai dari rumah paling sederhana hingga istana termegah. Mainkan dalam mode kreatif dengan sumber daya tak terbatas atau gali lebih dalam ke dunia dalam mode bertahan hidup, buat senjata dan baju zirah untuk menangkis monster berbahaya.\n\n✨ Fitur Game:\n- Dunia voxel tak terbatas dengan beragam bioma unik\n- Dukungan multiplayer lintas platform\n- Modifikasi & tekstur kustom\n- Patch stabilitas performa 60fps untuk berbagai perangkat.",
     ukuran: "345,2 MB",
