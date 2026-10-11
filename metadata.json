@@ -1,6 +1,5 @@
 {
-  "name": "PlayStore Web - NewAppStore",
-  "description": "Web app store modern bergaya resmi Google Play Store dengan katalog aplikasi & game, detail APK, ulasan pengguna, dan fitur publikasi aplikasi.",
+  "name": "NewAppStore - Store App Lokal",
   "requestFramePermissions": [],
   "majorCapabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
