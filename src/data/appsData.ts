@@ -39,20 +39,20 @@ import heroAiAssistant from '../assets/images/hero_ai_assistant_1791590831418.jp
 export const initialAppsDatabase: AppItem[] = [
   {
     id: "com.ai.neXai",
-    nama: "neXai core - AI Assistant",
+    nama: "neXai core - AI",
     developer: "PitNewbie'",
     kategori: "aplikasi",
     subKategori: "Produktivitas & AI",
-    icon: "https://freeimage.host/i/nMXoH8J?w=200&auto=format&fit=crop&q=80",
+    icon: "https://6abf4d6f48813dd42f7635cf.imgix.net/sandbox/logo%20neXai.jpg?w=200&auto=format&fit=crop&q=80",
     bannerImage: heroAiAssistant,
     deskripsi: "🤖 neXai core - AI Assistant Pribadi\n\nneXai core adalah asisten AI yang dirancang langsung untuk membantu kehidupan sehari-hari.\n\n✨ Fitur Utama:\n- Chat Pintar - Tanya apa aja, dari PR sampai ide konten\n- Ringan & Cepat - Dioptimalkan untuk perangkat ramah memori\n- Privasi 100% - Semua chat diproses lokal, aman & tanpa pelacakan\n- Tanpa Iklan - Fokus berinteraksi tanpa gangguan pop-up\n- Gratis - Chat sepuasnya tanpa biaya langganan tersembunyi\n\n💡 Cocok buat:\nPelajar, content creator, penulis, programmer, atau sekadar teman diskusi harian.",
     ukuran: "206 KB",
     driveId: "https://www.mediafire.com/file/ef5leipdh8wrynh/neXai.apk/file",
     versi: "1.2.5.2",
     labels: ["#webview", "#ai", "#online", "#tools", "#lightweight"],
-    rating: 4.8,
-    totalReviews: "14.2 rb",
-    downloads: "50 rb+",
+    rating: 4.7,
+    totalReviews: "14",
+    downloads: "10+",
     ageRating: "Rating 3+",
     isEditorsChoice: true,
     featuredRank: 1,
@@ -65,12 +65,12 @@ export const initialAppsDatabase: AppItem[] = [
     reviews: [
       {
         id: "r1",
-        userName: "Rian Firmansyah",
+        userName: "Rian gold lane🥶",
         userAvatar: "R",
-        rating: 5,
+        rating: 4,
         date: "28 Sep 2026",
-        comment: "Aplikasinya enteng banget! Beneran cuma 200kb tapi jawabannya cerdas dan responsif. Mantap karya anak bangsa!",
-        likes: 42
+        comment: "woi dev, ini knapa kok ai nya ga bisa jawab "server error" tolong jalanin lagi ai nya plis",
+        likes: 8
       },
       {
         id: "r2",
@@ -78,14 +78,14 @@ export const initialAppsDatabase: AppItem[] = [
         userAvatar: "D",
         rating: 5,
         date: "12 Agt 2026",
-        comment: "UI-nya bersih, ga ada iklan yang ganggu pas ngetik skripsi. Rekomendasi buat mahasiswa.",
-        likes: 19
+        comment: "UI-nya bersih, ga ada iklan yang ganggu pas ngetik skripsi. gg ni dev.",
+        likes: 6
       }
     ]
   },
   {
     id: "com.game.minecraft",
-    nama: "Minecraft Bedrock Edition",
+    nama: "Minecraft Bedrock",
     developer: "Mojang Studio",
     kategori: "game",
     subKategori: "Petualangan & Sandbox",
@@ -107,15 +107,15 @@ export const initialAppsDatabase: AppItem[] = [
       "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&auto=format&fit=crop&q=80"
     ],
-    whatsNew: "Perbaikan bug render render dragon arm64, peningkatan stabilitas frame rate dan optimasi shader.",
+    whatsNew: "Minecraft Patch terbaru.",
     reviews: [
       {
         id: "r3",
         userName: "Bima Pratama",
         userAvatar: "B",
         rating: 5,
-        date: "04 Okt 2026",
-        comment: "Patch paling stabil! Lancar jaya di HP Snapdragon 680, ga ada drop frame pas eksplor Nether.",
+        date: "04 Juni 2026",
+        comment: "Bagus banget gada virusnya pula, bisa pasang shader/mod, apalagi mod jenny🗿☕.",
         likes: 85
       },
       {
@@ -124,14 +124,14 @@ export const initialAppsDatabase: AppItem[] = [
         userAvatar: "A",
         rating: 4,
         date: "25 Sep 2026",
-        comment: "Bagus banget, tinggal optimasi sedikit lagi di server realm online.",
-        likes: 31
+        comment: "woi min, kok ga update lagi... udh ketinggalan jaman ni mc, tolonglah.",
+        likes: 27
       }
     ]
   },
   {
     id: "com.Orbitku.3d",
-    nama: "Orbitku - Simulasi Tata Surya 3D",
+    nama: "Orbitku - Tata Surya 3D",
     developer: "PitNewbie",
     kategori: "game",
     subKategori: "Simulasi & Edukasi",
@@ -142,9 +142,9 @@ export const initialAppsDatabase: AppItem[] = [
     driveId: "https://www.mediafire.com/file/rfbglcixvkpnoui/Orbitku.apk/file",
     versi: "1.5.8.12",
     labels: ["#webview", "#petualangan", "#simulasi", "#santai", "#pengetahuan"],
-    rating: 4.9,
-    totalReviews: "8.6 rb",
-    downloads: "25 rb+",
+    rating: 4.6,
+    totalReviews: "8.6",
+    downloads: "25+",
     ageRating: "Rating 3+",
     isEditorsChoice: false,
     featuredRank: 3,
@@ -160,15 +160,15 @@ export const initialAppsDatabase: AppItem[] = [
         userName: "Fajar Nugraha",
         userAvatar: "F",
         rating: 5,
-        date: "02 Okt 2026",
-        comment: "Visual planetnya keren banget padahal filenya cuma 5MB! Anak saya suka banget belajar astronomi lewat sini.",
-        likes: 64
+        date: "02 Sep 2026",
+        comment: "walau cuma tata Surya doang bagus, buat orng gabut enak nih😹.",
+        likes: 12
       }
     ]
   },
   {
     id: "com.neXai.Search",
-    nama: "neXai Search - Browser Pintar AI",
+    nama: "neXai Search",
     developer: "PitNewbie",
     kategori: "aplikasi",
     subKategori: "Alat & Penjelajah Web",
@@ -180,8 +180,8 @@ export const initialAppsDatabase: AppItem[] = [
     versi: "6.9.12",
     labels: ["#offline", "#online", "#browser", "#penelusuran", "#tools"],
     rating: 4.7,
-    totalReviews: "16.1 rb",
-    downloads: "100 rb+",
+    totalReviews: "16.1",
+    downloads: "38+",
     ageRating: "Rating 3+",
     isEditorsChoice: true,
     featuredRank: 4,
@@ -196,15 +196,15 @@ export const initialAppsDatabase: AppItem[] = [
         userName: "Siti Rahma",
         userAvatar: "S",
         rating: 5,
-        date: "07 Okt 2026",
-        comment: "Buka website super kenceng, ga ada iklan popup menjengkelkan. Cocok banget dijadiin browser default.",
+        date: "07 Juli 2026",
+        comment: "ini keren si, buat cek link mencurigakan disini aman, soalnya klo ada link phising/semacamnya ga bakal ambil data hp kita, mantap min.",
         likes: 27
       }
     ]
   },
   {
     id: "com.savings.money",
-    nama: "TabunganKu Pro - Celengan Digital",
+    nama: "TabunganKu Pro",
     developer: "PitNewbie",
     kategori: "aplikasi",
     subKategori: "Keuangan & Gaya Hidup",
@@ -216,8 +216,8 @@ export const initialAppsDatabase: AppItem[] = [
     versi: "2.4.34",
     labels: ["#offline", "#online", "#tabungan", "#usaha", "celengan", "#finance"],
     rating: 4.9,
-    totalReviews: "9.8 rb",
-    downloads: "40 rb+",
+    totalReviews: "19.8",
+    downloads: "40+",
     ageRating: "Rating 3+",
     isEditorsChoice: true,
     featuredRank: 5,
@@ -225,87 +225,15 @@ export const initialAppsDatabase: AppItem[] = [
       "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&auto=format&fit=crop&q=80"
     ],
-    whatsNew: "Kalkulator target harian dinamis, widget layar beranda, dan tema warna pastel yang estetik.",
+    whatsNew: "Penambahan notifikasi keluar/masuknya tabungan, tema warna pastel yang estetik.",
     reviews: [
       {
         id: "r7",
         userName: "Hendra Wijaya",
         userAvatar: "H",
         rating: 5,
-        date: "05 Okt 2026",
+        date: "05 Agt 2026",
         comment: "Sangat membantu buat nabung beli laptop baru. Tampilannya simpel tapi fungsional banget!",
-        likes: 51
-      }
-    ]
-  },
-  {
-    id: "com.pixel.creator",
-    nama: "Pixel Studio Pro",
-    developer: "Hippopx Labs",
-    kategori: "aplikasi",
-    subKategori: "Seni & Desain",
-    icon: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=200&auto=format&fit=crop&q=80",
-    bannerImage: heroCyberRpg,
-    deskripsi: "Editor pixel art canggih untuk game developer dan seniman digital. Mendukung animasi frame-by-frame, lapisan tak terbatas, dan palet warna retro legendaris.",
-    ukuran: "14,8 MB",
-    driveId: "https://www.mediafire.com",
-    versi: "4.8.1",
-    labels: ["#pixelart", "#desain", "#animasi", "#tools", "#offline"],
-    rating: 4.8,
-    totalReviews: "32 rb",
-    downloads: "500 rb+",
-    ageRating: "Rating 3+",
-    isEditorsChoice: false,
-    featuredRank: 6,
-    screenshots: [
-      heroCyberRpg,
-      "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=800&auto=format&fit=crop&q=80"
-    ],
-    whatsNew: "Dukungan ekspor format GIF 60FPS dan integrasi palet Aseprite.",
-    reviews: [
-      {
-        id: "r8",
-        userName: "Teguh Santoso",
-        userAvatar: "T",
-        rating: 5,
-        date: "01 Okt 2026",
-        comment: "Fitur onion skin buat bikin sprite game 2D mantap banget. Gampang dipakai di tablet.",
-        likes: 18
-      }
-    ]
-  },
-  {
-    id: "com.retro.arcade",
-    nama: "RetroArch Emulator Plus",
-    developer: "Libretro Team",
-    kategori: "game",
-    subKategori: "Arcade & Nostalgia",
-    icon: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=200&auto=format&fit=crop&q=80",
-    bannerImage: heroCyberRpg,
-    deskripsi: "Pusat game konsol retro serba guna. Mainkan ribuan judul game klasik dari era 8-bit, 16-bit, hingga 32-bit dengan shader grafis CRT dan dukungan joystick Bluetooth.",
-    ukuran: "48,5 MB",
-    driveId: "https://www.mediafire.com",
-    versi: "1.18.0",
-    labels: ["#arcade", "#retro", "#emulator", "#offline", "#games"],
-    rating: 4.6,
-    totalReviews: "45 rb",
-    downloads: "1 jt+",
-    ageRating: "Rating 12+",
-    isEditorsChoice: false,
-    featuredRank: 7,
-    screenshots: [
-      heroCyberRpg,
-      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&auto=format&fit=crop&q=80"
-    ],
-    whatsNew: "Core update untuk PS1 dan Game Boy Advance dengan fitur netplay multiplayer lancar.",
-    reviews: [
-      {
-        id: "r9",
-        userName: "Kiki Pratomo",
-        userAvatar: "K",
-        rating: 5,
-        date: "20 Sep 2026",
-        comment: "Bisa bernostalgia main game PS1 lancar tanpa lag di HP menengah. Keren!",
         likes: 37
       }
     ]
