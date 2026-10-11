@@ -1,5 +1,6 @@
 {
   "name": "NewAppStore - Store App Lokal",
+  "description": "NewAppStore - Rumahnya aplikasi buatan Lokal. Wadah untuk programmer lokal yang belum punya biaya upload ke Play Store. Dapatkan kesempatan upload gratis!",
   "requestFramePermissions": [],
   "majorCapabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
