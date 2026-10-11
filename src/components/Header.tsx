@@ -171,7 +171,7 @@ export const Header: React.FC<HeaderProps> = ({
             onClick={() => setActiveTab('semua')}
             className="cursor-pointer shrink-0"
           >
-            <PlayLogo size={32} />
+            <NewAppStoreLogo size={32} />
           </div>
 
           <nav className="flex items-center gap-1">
