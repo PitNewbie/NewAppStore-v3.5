@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { NewAppStore } from './PlayLogo';
+import { NewAppStoreLogo } from './PlayLogo';
 import { Search, X, Sparkles, User, DownloadCloud, Plus, LogOut, Edit2 } from 'lucide-react';
 
 interface HeaderProps {
