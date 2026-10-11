@@ -69,7 +69,7 @@ export const initialAppsDatabase: AppItem[] = [
         userAvatar: "R",
         rating: 4,
         date: "28 Sep 2026",
-        comment: "woi dev, ini knapa kok ai nya ga bisa jawab "server error" tolong jalanin lagi ai nya plis",
+        comment: 'woi dev, ini knapa kok ai nya ga bisa jawab "server error" tolong jalanin lagi ai nya plis',
         likes: 8
       },
       {
