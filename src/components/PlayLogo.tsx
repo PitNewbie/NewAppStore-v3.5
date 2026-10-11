@@ -77,3 +77,6 @@ export const NewAppStoreLogo: React.FC<{
     </div>
   );
 };
+
+export const PlayLogo = NewAppStoreLogo;
+export default NewAppStoreLogo;
