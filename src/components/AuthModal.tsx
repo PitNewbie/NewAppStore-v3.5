@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { PlayLogo } from './PlayLogo';
+import { NewAppStoreLogo } from './PlayLogo';
 import { User, Mail, Lock, ArrowRight, ShieldCheck } from 'lucide-react';
 
 interface AuthModalProps {
