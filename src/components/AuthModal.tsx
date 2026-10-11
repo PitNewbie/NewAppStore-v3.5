@@ -27,7 +27,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onSuccess }) => {
         
         <div className="text-center mb-6">
           <div className="flex justify-center mb-4">
-            <PlayLogo size={42} showText={true} />
+            <NewAppStoreLogo size={42} showText={true} />
           </div>
           <h2 className="text-xl font-bold tracking-tight text-white">
             Masuk ke PlayStore Web
