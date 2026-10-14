@@ -40,7 +40,7 @@ export const initialAppsDatabase: AppItem[] = [
   {
     id: "com.ai.neXai",
     nama: "neXai core - AI",
-    developer: "PitNewbie'",
+    developer: "Starpit.my.id",
     kategori: "aplikasi",
     subKategori: "Produktivitas & AI",
     icon: "https://6abf4d6f48813dd42f7635cf.imgix.net/sandbox/logo%20neXai.jpg?w=200&auto=format&fit=crop&q=80",
@@ -132,7 +132,7 @@ export const initialAppsDatabase: AppItem[] = [
   {
     id: "com.Orbitku.3d",
     nama: "Orbitku - Tata Surya 3D",
-    developer: "PitNewbie",
+    developer: "Starpit.my.id",
     kategori: "game",
     subKategori: "Simulasi & Edukasi",
     icon: "https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=200&auto=format&fit=crop&q=80",
@@ -169,7 +169,7 @@ export const initialAppsDatabase: AppItem[] = [
   {
     id: "com.neXai.Search",
     nama: "neXai Search",
-    developer: "PitNewbie",
+    developer: "Starpit.my.id",
     kategori: "aplikasi",
     subKategori: "Alat & Penjelajah Web",
     icon: "https://6abf4d6f48813dd42f7635cf.imgix.net/sandbox/neXai.png?w=200&auto=format&fit=crop&q=80",
@@ -205,7 +205,7 @@ export const initialAppsDatabase: AppItem[] = [
   {
     id: "com.savings.money",
     nama: "TabunganKu Pro",
-    developer: "PitNewbie",
+    developer: "Starpit.my.id",
     kategori: "aplikasi",
     subKategori: "Keuangan & Gaya Hidup",
     icon: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=200&auto=format&fit=crop&q=80",
@@ -235,6 +235,43 @@ export const initialAppsDatabase: AppItem[] = [
         date: "05 Agt 2026",
         comment: "Sangat membantu buat nabung beli laptop baru. Tampilannya simpel tapi fungsional banget!",
         likes: 37
+      }
+    ]
+  },
+  {
+    id: "com.starpit.toline",
+    nama: "ToLine",
+    developer: "StarPit.my.id",
+    kategori: "aplikasi",
+    subKategori: "Marketplace & Produk Digital",
+    icon: "https://6abf4d6f48813dd42f7635cf.imgix.net/sandbox/Proyek%20Baru%2038%20%5B7447254%5D.png?w=200&auto=format&fit=crop&q=80",
+    bannerImage: "https://6abf4d6f48813dd42f7635cf.imgix.net/sandbox/Proyek%20Baru%2038%20%5B7447254%5D.png?w=1200&auto=format&fit=crop&q=80",
+    deskripsi: "Dashboard\nRincian\nDownload\nProduk Digital, ToLine\nLayanan WA, proses cepat, aman dan terpercaya.\n\nDownload Aplikasi\nTentang Aplikasi ToLine\nToLine adalah platform jual beli produk digital terpercaya. Kami memudahkan kamu mendapatkan akun premium, bot, dan layanan digital lainnya dengan proses instan.\n\n🛒 Marketplace Digital:\nJual dan beli berbagai produk digital seperti Akun Premium Spotify, Netflix, Capcut Pro, Wink, dan lainnya. Semua produk 100% legal & bergaransi.\n\n⚡ Proses Otomatis & Cepat:\nTinggal pilih produk, bayar, dan akun langsung dikirim ke WA kamu. Tanpa nunggu lama. CS kami juga aktif 24 jam buat bantuin kamu.\n\n🔒 Aman & Terpercaya:\nSemua transaksi tercatat. Ada sistem rating penjual dan garansi uang kembali jika produk tidak sesuai. Udah dipercaya 1000+ pelanggan.\n\n💳 Pembayaran Fleksibel:\nBisa bayar via E-Wallet, Transfer Bank, dan QRIS. Harga transparan, ada harga coret biar kamu tau lagi diskon.\n\n📱 Desain Simpel:\nTampilan aplikasi dibuat se-simple mungkin biar enak dipake. Ada fitur cari, filter kategori, dan riwayat transaksi lengkap.\n\n🎧 Support Via WhatsApp:\nAda kendala? Langsung chat admin di WA. Respon cepat dan solusi tuntas. Kami jamin kepuasan pelanggan nomor 1.",
+    ukuran: "1,8 MB",
+    driveId: "https://www.mediafire.com/file/1n5u0k2287ixkyn/ToLine.apk/file",
+    versi: "1.3.8.29378",
+    labels: ["#marketplace", "#produkDigital", "#akunPremium", "#store", "#terpercaya"],
+    rating: 4.8,
+    totalReviews: "10",
+    downloads: "13",
+    ageRating: "Rating 3+",
+    isEditorsChoice: true,
+    featuredRank: 1,
+    screenshots: [
+      "https://6abf4d6f48813dd42f7635cf.imgix.net/sandbox/Proyek%20Baru%2038%20%5B7447254%5D.png?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&auto=format&fit=crop&q=80"
+    ],
+    whatsNew: "Rilis Perdana ToLine! Marketplace produk digital dengan sistem kirim otomatis ke WhatsApp.",
+    reviews: [
+      {
+        id: "r1",
+        userName: "Rizky",
+        userAvatar: "R",
+        rating: 5,
+        date: "13 Sep 2026",
+        comment: "Jos, kumpulan Para kang store njir... pada amanah pula",
+        likes: 6
       }
     ]
   }
