@@ -26,9 +26,9 @@ function autoAppsJson() {
       fs.mkdirSync('public', { recursive: true })
       fs.writeFileSync('public/apps.json', JSON.stringify(result, null, 2))
       console.log(`✅ AUTO apps.json: ${Object.keys(result).length} apps dari appData.tsx`)
-    }
-  },
-};
+    },
+  };
+}
 
 export default defineConfig(() => {
   return {
