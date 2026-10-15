@@ -4,47 +4,39 @@ import path from 'path';
 import fs from 'fs';
 import {defineConfig} from 'vite';
 
-function autoOG() {
+function ogBanner() {
   return {
-    name: 'auto-og',
-    buildStart() {
-      // BACA LANGSUNG DARI appData.tsx LU
+    name: 'og-Banner',
+    closeBundle() {
       const src = fs.readFileSync('src/data/appData.tsx', 'utf-8');
-      const regex = /id:\s*"([^"]+)"[\s\S]*?nama:\s*"([^"]+)"[\s\S]*?icon:\s*"([^"]+)"[\s\S]*?deskripsi:\s*"([^"\n]+)/g;
-      
-      let db = "";
+      const re = /id:\s*"([^"]+)"[\s\S]*?nama:\s*"([^"]+)"[\s\S]*?icon:\s*"([^"]+)"[\s\S]*?deskripsi:\s*"([^"]+)[\s\S]*?versi:\s*"([^"]+)"/g;
       let m;
-      while ((m = regex.exec(src)) !== null) {
-        const [_, id, nama, icon, descRaw] = m;
-        const cleanDesc = descRaw.replace(/"/g, '').replace(/🤖|✨|💡/g, '').slice(0,120);
-        const iconHD = icon.replace('w=200', 'w=1200'); // biar HD di WA
-        db += `    "${id}": { nama: ${JSON.stringify(nama)}, icon: ${JSON.stringify(iconHD)}, desc: ${JSON.stringify(cleanDesc)} },\n`;
-      }
+      while ((m = re.exec(src))!== null) {
+        const [_, id, nama, icon, descRaw, versi] = m;
+        // BIAR GAMBAR NGIKUTIN ASLI - gak di crop jadi banner
+        const iconOriginal = icon.replace(/w=\d+.*/, 'w=1200&h=1200&auto=format').split('"')[0];
+        const desc = descRaw.slice(0,100).replace(/"/g,'');
 
-      const middlewareCode = `export async function onRequest(context) {
-  const url = new URL(context.request.url);
-  const appId = url.searchParams.get("app");
-  const res = await context.next();
-  if (!appId) return res;
-  if (!res.headers.get("content-type")?.includes("text/html")) return res;
-  const DB = {
-${db}  };
-  const app = DB[appId];
-  if (!app) return res;
-  let html = await res.text();
-  html = html.replace(/<meta property="og:[^>]*>/g, "");
-  html = html.replace(/<meta name="twitter:[^>]*>/g, "");
-  const tags = \`<meta property="og:title" content="\${app.nama} - NewAppStore" /><meta property="og:description" content="\${app.desc}" /><meta property="og:image" content="\${app.icon}" /><meta property="og:url" content="\${url.href}" /><meta property="og:type" content="website" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:image" content="\${app.icon}" />\`;
-  return new Response(html.replace("<head>", \`<head>\${tags}\`), res);
-}`;
-
-      fs.mkdirSync('functions', { recursive: true });
-      fs.writeFileSync('functions/_middleware.js', middlewareCode);
-      console.log('✅ _middleware.js auto-generated dari appData.tsx');
-    },
-  };
-}
-
+        const html = `<!DOCTYPE html><html><head>
+<meta charset="utf-8">
+<title>${nama} APK untuk Unduhan Android</title>
+<meta property="og:title" content="${nama} APK untuk Unduhan Android">
+<meta property="og:description" content="Unduhan APK ${nama} ${versi} untuk Android. ${desc}">
+<meta property="og:image" content="${iconOriginal}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1200">
+<meta property="og:url" content="https://s.starpit.my.id/app/${id}/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NewAppStore">
+<meta name="twitter:card" content="summary_large_image">
+<meta http-equiv="refresh" content="0; url=/?app=${id}">
+</head></html>`;
+        const dir = path.join('dist','app',id);
+        fs.mkdirSync(dir,{recursive:true});
+        fs.writeFileSync(path.join(dir,'index.html'), html);
+      },
+    };
+  }
 
 export default defineConfig(() => {
   return {
