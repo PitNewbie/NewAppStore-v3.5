@@ -4,30 +4,47 @@ import path from 'path';
 import fs from 'fs';
 import {defineConfig} from 'vite';
 
-function genOG() {
+function autoOG() {
   return {
-    name: 'gen-og-s',
-    closeBundle() {
-      try {
-        const meta = JSON.parse(fs.readFileSync('metadata.json','utf-8'));
-        const appSrc = fs.readFileSync('src/data/appData.tsx','utf-8');
-        const regex = /id:\s*"([^"]+)"[\s\S]*?nama:\s*"([^"]+)"[\s\S]*?icon:\s*"([^"]+)"[\s\S]*?deskripsi:\s*"([\s\S]*?)",\s*\n\s*ukuran/g;
-        let m;
-        while ((m = regex.exec(appSrc))!== null) {
-          const [_, id, nama, icon, des] = m;
-          const desc = des.split('\n')[0].slice(0,150).replace(/"/g,'');
-          const dir = `dist/app/${id}`;
-          fs.mkdirSync(dir,{recursive:true});
-          fs.writeFileSync(`${dir}/index.html`, `<!doctype html><html><head><meta charset="utf-8"><title>${nama}</title><meta property="og:title" content="${nama}"><meta property="og:description" content="${desc}"><meta property="og:image" content="${icon}"><meta property="og:url" content="https://s.starpit.my.id/app/${id}/"><meta http-equiv="refresh" content="0;url=/?app=${id}"></head><body></body></html>`);
-        }
-        let idx = fs.readFileSync('dist/index.html','utf-8');
-        idx = idx.replace('</head>', `<meta property="og:title" content="${meta.name}"><meta property="og:description" content="${meta.description}"><meta property="og:image" content="${meta.image}"><meta property="og:url" content="${meta.url}"></head>`);
-        fs.writeFileSync('dist/index.html', idx);
-        console.log('OG s.starpit OK');
-      } catch(e){ console.log(e) }
+    name: 'auto-og',
+    buildStart() {
+      // BACA LANGSUNG DARI appData.tsx LU
+      const src = fs.readFileSync('src/data/appData.tsx', 'utf-8');
+      const regex = /id:\s*"([^"]+)"[\s\S]*?nama:\s*"([^"]+)"[\s\S]*?icon:\s*"([^"]+)"[\s\S]*?deskripsi:\s*"([^"\n]+)/g;
+      
+      let db = "";
+      let m;
+      while ((m = regex.exec(src)) !== null) {
+        const [_, id, nama, icon, descRaw] = m;
+        const cleanDesc = descRaw.replace(/"/g, '').replace(/🤖|✨|💡/g, '').slice(0,120);
+        const iconHD = icon.replace('w=200', 'w=1200'); // biar HD di WA
+        db += `    "${id}": { nama: ${JSON.stringify(nama)}, icon: ${JSON.stringify(iconHD)}, desc: ${JSON.stringify(cleanDesc)} },\n`;
+      }
+
+      const middlewareCode = `export async function onRequest(context) {
+  const url = new URL(context.request.url);
+  const appId = url.searchParams.get("app");
+  const res = await context.next();
+  if (!appId) return res;
+  if (!res.headers.get("content-type")?.includes("text/html")) return res;
+  const DB = {
+${db}  };
+  const app = DB[appId];
+  if (!app) return res;
+  let html = await res.text();
+  html = html.replace(/<meta property="og:[^>]*>/g, "");
+  html = html.replace(/<meta name="twitter:[^>]*>/g, "");
+  const tags = \`<meta property="og:title" content="\${app.nama} - NewAppStore" /><meta property="og:description" content="\${app.desc}" /><meta property="og:image" content="\${app.icon}" /><meta property="og:url" content="\${url.href}" /><meta property="og:type" content="website" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:image" content="\${app.icon}" />\`;
+  return new Response(html.replace("<head>", \`<head>\${tags}\`), res);
+}`;
+
+      fs.mkdirSync('functions', { recursive: true });
+      fs.writeFileSync('functions/_middleware.js', middlewareCode);
+      console.log('✅ _middleware.js auto-generated dari appData.tsx');
     },
   };
 }
+
 
 export default defineConfig(() => {
   return {
