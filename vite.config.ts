@@ -34,7 +34,7 @@ function ogBanner() {
         const dir = path.join('dist','app',id);
         fs.mkdirSync(dir,{recursive:true});
         fs.writeFileSync(path.join(dir,'index.html'), html);
-      },
+      }
     };
   }
 
