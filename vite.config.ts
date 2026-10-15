@@ -35,8 +35,9 @@ function ogBanner() {
         fs.mkdirSync(dir,{recursive:true});
         fs.writeFileSync(path.join(dir,'index.html'), html);
       }
-    };
-  }
+    },
+  };
+}
 
 export default defineConfig(() => {
   return {
