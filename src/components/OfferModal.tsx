@@ -110,8 +110,11 @@ export const OfferModal: React.FC<OfferModalProps> = ({ isOpen, onClose }) => {
 
             <div className="flex flex-col gap-3">
               <button
-                onClick={() => setViewState('form')}
-                className="w-full bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-black font-bold py-3.5 rounded-2xl shadow-lg transition-all text-sm flex items-center justify-center gap-2 hover:scale-[1.01]"
+                onClick={() => {
+                    window.open('https://create.starpit.my.id/', '_blank');
+              onClose();
+              }}
+              className="w-full bg-gradient-to-r from-amber-500 to-yellow-500 ..."
               >
                 <Send className="w-4 h-4" />
                 <span>Mulai Isi Form Pengajuan</span>
