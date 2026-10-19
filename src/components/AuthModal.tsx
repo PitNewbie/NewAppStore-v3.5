@@ -30,7 +30,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onSuccess }) => {
             <NewAppStoreLogo size={42} showText={true} />
           </div>
           <h2 className="text-xl font-bold tracking-tight text-white">
-            Masuk ke PlayStore Web
+            Masuk ke NewAppStore 
           </h2>
           <p className="text-xs text-gray-400 mt-1.5 leading-relaxed">
             Daftar akun gratis untuk mulai mengunduh APK, memberikan ulasan bintang, dan mengelola koleksi aplikasi Anda.
@@ -97,7 +97,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onSuccess }) => {
         <div className="mt-5 pt-4 border-t border-[#2e323c] text-center">
           <p className="text-[11px] text-gray-500 flex items-center justify-center gap-1.5">
             <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-            <span>Dilindungi oleh Play Protect Security</span>
+            <span>Dilindungi oleh neXai - Starpit</span>
           </p>
         </div>
 
