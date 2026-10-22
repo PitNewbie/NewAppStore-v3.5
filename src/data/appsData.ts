@@ -85,7 +85,7 @@ export const initialAppsDatabase: AppItem[] = [
   },
   {
     id: "com.game.minecraft",
-    nama: "Minecraft Bedrock",
+    nama: "Minecraft Patch",
     developer: "Mojang Studio",
     kategori: "game",
     subKategori: "Petualangan & Sandbox",
@@ -93,10 +93,10 @@ export const initialAppsDatabase: AppItem[] = [
     bannerImage: "https://cloud.epand.my.id/i/e7gkwrzKUG.png?w=200&auto=format&fit=crop&q=80",
     deskripsi: "Jelajahi dunia tanpa batas dan bangun apa pun mulai dari rumah paling sederhana hingga istana termegah. Mainkan dalam mode kreatif dengan sumber daya tak terbatas atau gali lebih dalam ke dunia dalam mode bertahan hidup, buat senjata dan baju zirah untuk menangkis monster berbahaya.\n\n✨ Fitur Game:\n- Dunia voxel tak terbatas dengan beragam bioma unik\n- Dukungan multiplayer lintas platform\n- Modifikasi & tekstur kustom\n- Patch stabilitas performa 60fps untuk berbagai perangkat.",
     ukuran: "345,2 MB",
-    driveId: "https://www.mediafire.com/file/n1xjobky8vhonmf/McPatch_1.26.21_Arm64.apk/file?dkey=uvkh7j7062i&r=1587",
-    versi: "1.26.21.1",
-    labels: ["#rpg", "#petualangan", "#aksi", "#santai", "#sandbox"],
-    rating: 4.7,
+    driveId: "https://www.mediafire.com/file/e2wgs6n44dtwxyl/MC_Patch_Fixed_1.26.52.3.apk/file",
+    versi: "1.26.52.3",
+    labels: ["#rpg", "#petualangan", "#aksi", "#santai", "#sandbox", "modApk", "modifikasi"],
+    rating: 4.8,
     totalReviews: "128 rb",
     downloads: "10 jt+",
     ageRating: "Rating 7+",
@@ -107,7 +107,7 @@ export const initialAppsDatabase: AppItem[] = [
       "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&auto=format&fit=crop&q=80"
     ],
-    whatsNew: "Minecraft Patch terbaru.",
+    whatsNew: "Update Minecraft Patch terbaru\ndiupdate tanggal 25 Sep, 2026\n\nSorry mimin ga urus update Minecraft patch, soalnya ada urusan di RL.",
     reviews: [
       {
         id: "r3",
