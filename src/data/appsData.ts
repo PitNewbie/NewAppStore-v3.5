@@ -74,12 +74,21 @@ export const initialAppsDatabase: AppItem[] = [
       },
       {
         id: "r2",
-        userName: "Dina Novita",
+        userName: "Din",
         userAvatar: "D",
         rating: 5,
         date: "12 Agt 2026",
-        comment: "UI-nya bersih, ga ada iklan yang ganggu pas ngetik skripsi. gg ni dev.",
+        comment: "UI-nya bersih, agak jelek tpi gg ni dev.",
         likes: 6
+      },
+      {
+        id: "r2",
+        userName: "ham dipanggil nengok.",
+        userAvatar: "H",
+        rating: 1,
+        date: "1 okt 2026",
+        comment: "gw jujur sih, buat kalian jangan download ni apk, soalnya udh ga update lagi, jadi berVirus, beneran g boong gw, mending jangan download, klo ga salah gw cek ada virus apalah itu, tpi kayaknya cuma apk ini doang yang ada virusnya, gw cek semua apk selain ini aman, sumpah cokk, btw admin NewAppStore tolong acc ni ulasan gw, biar yng lain ga kaget.",
+        likes: 4
       }
     ]
   },
