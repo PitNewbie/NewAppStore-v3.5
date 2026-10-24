@@ -70,7 +70,7 @@ export const AppDetailModal: React.FC<AppDetailModalProps> = ({
     e.preventDefault();
     if (!newComment.trim()) return;
     onAddReview(app.id, {
-      userName: userName || 'Pengguna PlayStore',
+      userName: userName || 'Pengguna NewAppStore',
       userAvatar: (userName || 'P').charAt(0).toUpperCase(),
       rating: newRating,
       date: 'Hari ini',
