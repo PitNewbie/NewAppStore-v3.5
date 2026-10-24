@@ -87,7 +87,7 @@ export const initialAppsDatabase: AppItem[] = [
         userAvatar: "H",
         rating: 1,
         date: "1 okt 2026",
-        comment: "gw jujur sih, buat kalian jangan download ni apk, soalnya udh ga update lagi, jadi berVirus, beneran g boong gw, mending jangan download, klo ga salah gw cek ada virus apalah itu, tpi kayaknya cuma apk ini doang yang ada virusnya, gw cek semua apk selain ini aman, sumpah cokk, btw admin NewAppStore tolong acc ni ulasan gw, biar yng lain ga kaget.",
+        comment: "gue jujur sih, buat kalian jangan download ni apk, soalnya udh ga update lagi, jadi berVirus, beneran g boong gue, mending jangan download, klo ga salah gue cek ada virus apalah itu, tpi kayaknya cuma apk ini doang yang ada virusnya, gue cek semua apk selain ini aman, sumpah cokk, btw admin NewAppStore tolong acc ni ulasan gue, biar yng lain ga kaget.",
         likes: 4
       }
     ]
